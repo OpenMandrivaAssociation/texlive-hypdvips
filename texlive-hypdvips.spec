@@ -1,3 +1,9 @@
+# revision 23377
+# category Package
+# catalog-ctan /macros/latex/contrib/hypdvips
+# catalog-date 2011-06-07 18:10:36 +0200
+# catalog-license lppl1.3
+# catalog-version 2.03
 Name:		texlive-hypdvips
 Version:	2.03
 Release:	1
@@ -58,6 +64,7 @@ which in addition allows an enhanced back-referencing system.
 %doc %{_texmfdistdir}/doc/latex/hypdvips/images/pushpin.eps
 %doc %{_texmfdistdir}/doc/latex/hypdvips/images/tag.eps
 %doc %{_texmfdistdir}/doc/latex/hypdvips/manifest.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -68,3 +75,5 @@ which in addition allows an enhanced back-referencing system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
