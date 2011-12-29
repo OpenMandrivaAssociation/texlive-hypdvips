@@ -25,16 +25,8 @@ attachments, embedded documents and different types of GoTo-
 links. The cooperation of hyperref with cleveref is improved,
 which in addition allows an enhanced back-referencing system.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -63,7 +55,6 @@ which in addition allows an enhanced back-referencing system.
 %doc %{_texmfdistdir}/doc/latex/hypdvips/images/pushpin.eps
 %doc %{_texmfdistdir}/doc/latex/hypdvips/images/tag.eps
 %doc %{_texmfdistdir}/doc/latex/hypdvips/manifest.txt
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -74,5 +65,3 @@ which in addition allows an enhanced back-referencing system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
