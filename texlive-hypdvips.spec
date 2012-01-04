@@ -6,7 +6,7 @@
 # catalog-version 2.04
 Name:		texlive-hypdvips
 Version:	2.04
-Release:	1
+Release:	2
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
