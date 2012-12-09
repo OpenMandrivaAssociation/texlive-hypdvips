@@ -65,3 +65,21 @@ which in addition allows an enhanced back-referencing system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.04-2
++ Revision: 752589
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.04-1
++ Revision: 739779
+- texlive-hypdvips
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.03-1
++ Revision: 718627
+- texlive-hypdvips
+- texlive-hypdvips
+- texlive-hypdvips
+- texlive-hypdvips
+
