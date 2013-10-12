@@ -1,12 +1,12 @@
-# revision 24781
+# revision 28667
 # category Package
 # catalog-ctan /macros/latex/contrib/hypdvips
-# catalog-date 2011-12-06 18:13:39 +0100
+# catalog-date 2012-12-30 16:12:46 +0100
 # catalog-license lppl1.3
-# catalog-version 2.04
+# catalog-version 3.00
 Name:		texlive-hypdvips
-Version:	2.04
-Release:	2
+Version:	3.00
+Release:	1
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
@@ -65,21 +65,3 @@ which in addition allows an enhanced back-referencing system.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.04-2
-+ Revision: 752589
-- Rebuild to reduce used resources
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.04-1
-+ Revision: 739779
-- texlive-hypdvips
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.03-1
-+ Revision: 718627
-- texlive-hypdvips
-- texlive-hypdvips
-- texlive-hypdvips
-- texlive-hypdvips
-
