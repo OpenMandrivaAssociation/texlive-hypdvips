@@ -1,12 +1,12 @@
-# revision 28667
+# revision 33348
 # category Package
 # catalog-ctan /macros/latex/contrib/hypdvips
-# catalog-date 2012-12-30 16:12:46 +0100
+# catalog-date 2014-03-31 21:51:16 +0200
 # catalog-license lppl1.3
-# catalog-version 3.00
+# catalog-version 3.01
 Name:		texlive-hypdvips
-Version:	3.00
-Release:	6
+Version:	3.01
+Release:	1
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
