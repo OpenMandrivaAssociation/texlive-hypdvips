@@ -6,7 +6,7 @@
 # catalog-version 3.01
 Name:		texlive-hypdvips
 Version:	3.01
-Release:	1
+Release:	2
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
