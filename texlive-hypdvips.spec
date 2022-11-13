@@ -1,18 +1,12 @@
-# revision 33348
-# category Package
-# catalog-ctan /macros/latex/contrib/hypdvips
-# catalog-date 2014-03-31 21:51:16 +0200
-# catalog-license lppl1.3
-# catalog-version 3.01
 Name:		texlive-hypdvips
-Version:	3.02
-Release:	2
+Version:	53197
+Release:	1
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ links. The cooperation of hyperref with cleveref is improved,
 which in addition allows an enhanced back-referencing system.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -58,7 +52,7 @@ which in addition allows an enhanced back-referencing system.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
