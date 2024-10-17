@@ -3,7 +3,7 @@ Version:	53197
 Release:	2
 Summary:	Hyperref extensions for use with dvips
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/hypdvips
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hypdvips.doc.r%{version}.tar.xz
